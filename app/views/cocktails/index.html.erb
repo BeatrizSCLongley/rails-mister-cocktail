@@ -1,13 +1,13 @@
-<h1>List of Cocktails</h1>
+<h1 class= "center">List of Cocktails</h1>
 
-<div>
-  <p>
-    <% @cocktails.each do |cocktail| %>
-      <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>
-    <% end %>
-  </p>
+<p class="center">Find here the best cocktails</p>
+
+<div class="container col-xs-12 col-sm-10 col-sm-offset-1">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card"><%= link_to cocktail.name, cocktail_path(cocktail), { class: "link" }%></div>
+  <% end %>
 </div>
 
-<p>
-  <%= link_to 'Create a cocktail', new_cocktail_path %>
-</p>
+<div class="center margin">
+    <%= link_to 'Add a cocktail', new_cocktail_path, { class: "btn-dark" }%>
+</div>

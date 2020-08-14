@@ -11,3 +11,44 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+//CSS components
+@import "components/links";
+@import "components/cards";
+@import "components/buttons";
+
+// rgb(208, 55, 83)
+// rgb(144, 131, 121)
+// rgb(102, 91, 83)
+// rgb(107, 96, 88)
+// rgb(247, 229, 210)
+
+body {
+  background-color: rgb(251, 244, 237);
+  font-family: Avenir;
+  h1 {
+    font-family: 'SignPainter';
+    letter-spacing: 3px;
+    margin: 30px;
+    color: rgb(107, 96, 88);
+    font-size: 80px;
+  }
+}
+
+p {
+  color: rgb(107, 96, 88);
+}
+
+h2 {
+  color: rgb(107, 96, 88);
+  font-size: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}

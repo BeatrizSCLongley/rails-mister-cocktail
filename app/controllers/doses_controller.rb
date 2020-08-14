@@ -3,7 +3,6 @@ class DosesController < ApplicationController
 
   def new
     @dose = Dose.new
-    @ingredients = Ingredient.all
   end
 
   def create
@@ -13,13 +12,15 @@ class DosesController < ApplicationController
     if @dose.save
       redirect_to cocktail_path(@cocktail)
     else
-      render :new
+      render 'cocktails/show'
     end
   end
 
   def destroy
     @dose = Dose.find(params[:id])
     @dose.destroy
+    # redirect to cocktail instance, now without the dose
+    redirect_to cocktail_path(@dose.cocktail)
   end
 
   private

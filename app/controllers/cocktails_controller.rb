@@ -3,13 +3,14 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
 
-  def new
-    @cocktail = Cocktail.new
+  def show
+    # Need to find cocktail and create a dose instance
+    @cocktail = Cocktail.find(params[:id])
+    @dose = Dose.new
   end
 
-  def show
-    @cocktail = Cocktail.find(params[:id])
-    # @dose = Dose.find(params[:cocktail_id])
+  def new
+    @cocktail = Cocktail.new
   end
 
   def create
