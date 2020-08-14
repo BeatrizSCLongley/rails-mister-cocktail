@@ -16,6 +16,9 @@ ing['drinks'].each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
 
+Cocktail.create(name: "Margarita")
+Cocktail.create(name: "Mojito")
+
 # Using the json url - you select the element you want to iterate over
 # ing = json parsing - calling the key inside the hash / object - ing['drinks']
 # Next step is to iterate over the key, to get inside the hashes inside the array
