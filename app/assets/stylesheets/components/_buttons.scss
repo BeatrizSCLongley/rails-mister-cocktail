@@ -1,12 +1,13 @@
 .btn-dark {
-  background-color: rgb(208, 55, 83);
-  padding: 10px;
+  background-color: rgba(247, 229, 210, 0);
+  border: 2px solid rgb(247, 229, 210);
+  padding: 35px 100px;
   border-radius: 15px;
-  margin: 15px;
+  font-weight: bold;
 }
 
 .btn-dark:hover {
-  background-color: rgba(208, 55, 83, 0.2);
-  // text-decoration: none;
+  background-color: rgb(247, 229, 210);
+  border: 2px solid rgb(247, 229, 210);
   color: rgb(102, 91, 83);
 }

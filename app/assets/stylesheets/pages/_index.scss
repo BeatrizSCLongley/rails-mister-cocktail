@@ -1,2 +1,19 @@
-// Import page-specific CSS files here.
-@import "home";
+#index-banner {
+  height: 719px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'SignPainter';
+  letter-spacing: 3px;
+  margin-top: 164px;
+  color: rgb(247, 229, 210);
+  font-size: 80px;
+}
+
+#btn-banner {
+  margin-top: 163px;
+}

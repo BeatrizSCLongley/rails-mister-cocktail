@@ -1,5 +1,9 @@
 class Cocktail < ApplicationRecord
-  has_many :doses, dependent: :destroy
-  has_many :ingredients, through: :doses
+  # A cocktail must have a unique name
   validates :name, uniqueness: true, presence: true
+  # A cocktail has many doses
+  # and when you delete a cocktail + delete associated doses
+  has_many :doses, dependent: :destroy
+  # A cocktail has many ingredients through doses
+  has_many :ingredients, through: :doses
 end

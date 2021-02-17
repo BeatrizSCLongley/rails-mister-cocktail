@@ -8,14 +8,16 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// Your CSS partials
-@import "components/index";
+// Your CSS pages
 @import "pages/index";
 
 //CSS components
 @import "components/links";
 @import "components/cards";
 @import "components/buttons";
+@import "components/alert";
+@import "components/avatar";
+@import "components/navbar";
 
 // rgb(208, 55, 83)
 // rgb(144, 131, 121)
@@ -23,16 +25,10 @@
 // rgb(107, 96, 88)
 // rgb(247, 229, 210)
 
+// -----------------------------------------------------------------------------
 body {
   background-color: rgb(251, 244, 237);
   font-family: Avenir;
-  h1 {
-    font-family: 'SignPainter';
-    letter-spacing: 3px;
-    margin: 30px;
-    color: rgb(107, 96, 88);
-    font-size: 80px;
-  }
 }
 
 p {
@@ -42,11 +38,6 @@ p {
 h2 {
   color: rgb(107, 96, 88);
   font-size: 30px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
 }
 
 li {
