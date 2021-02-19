@@ -4,19 +4,21 @@
       <div class="col">
         <h1>Bucketlist Cocktails</h1>
         <div id="btn-banner">
-          <%= link_to 'ADD A COCKTAIL', new_cocktail_path, { class: "btn-dark" }%>
+          <%= link_to 'ADD A COCKTAIL', new_cocktail_path, { class: "btn-light" }%>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container" id="list-cocktails">
-  <div class="row">
-    <div class="col-sm">
-      <% @cocktails.each do |cocktail| %>
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/assets/drinks.jpg);background-size: cover; background-position: center center;"><%= link_to cocktail.name, cocktail_path(cocktail), { class: "link" }%></div>
-      <% end %>
+<div id="list-cocktails">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <% @cocktails.each do |cocktail| %>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/assets/drinks.jpg);background-size: cover; background-position: center center;"><%= link_to cocktail.name, cocktail_path(cocktail), { class: "link" }%></div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
