@@ -8,4 +8,6 @@ class Cocktail < ApplicationRecord
   has_many :ingredients, through: :doses
   # Review
   has_many :reviews, dependent: :destroy
+  # Photos ??
+  # mount_uploader :photo, PhotoUploader
 end

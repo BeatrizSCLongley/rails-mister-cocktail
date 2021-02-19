@@ -11,6 +11,9 @@
 // Your CSS pages
 @import "pages/index";
 
+@import "doses";
+@import "reviews";
+
 //CSS components
 @import "components/links";
 @import "components/cards";
@@ -19,7 +22,6 @@
 @import "components/avatar";
 @import "components/navbar";
 
-@import "doses";
 
 // rgb(208, 55, 83)
 // rgb(144, 131, 121)
