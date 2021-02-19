@@ -6,4 +6,6 @@ class Cocktail < ApplicationRecord
   has_many :doses, dependent: :destroy
   # A cocktail has many ingredients through doses
   has_many :ingredients, through: :doses
+  # Review
+  has_many :reviews, dependent: :destroy
 end
